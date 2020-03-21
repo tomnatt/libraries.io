@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 ruby '2.4.0'
 
-gem 'dotenv-rails', :require => 'dotenv/rails-now'
+gem 'dotenv-rails', '>= 2.2.2'
 gem 'rb-readline'
 gem 'oj'
-gem 'rails', '5.0.2'
+gem 'rails', '5.2.4.2'
 gem 'pg'
-gem 'sassc-rails'
+gem 'sassc-rails', '>= 1.3.0'
 gem 'uglifier'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.1'
 gem 'octokit'
 gem 'bootstrap-sass'
 gem 'will_paginate-bootstrap'
@@ -30,17 +30,17 @@ gem 'fog-aws'
 gem 'omniauth-github'
 gem 'dalli'
 gem 'counter_culture'
-gem 'simple_form'
+gem 'simple_form', '>= 4.0.0'
 gem 'sidekiq'
 gem 'sidekiq-unique-jobs', git: 'https://github.com/mhenrixon/sidekiq-unique-jobs'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.4'
 gem 'mime-types', require: 'mime/types/columnar'
 gem 'fast_blank'
 gem 'fast_xs'
 gem 'fast_xor'
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.9.5'
 gem 'gemoji'
-gem 'js_cookie_rails'
+gem 'js_cookie_rails', '>= 2.1.3'
 gem 'postgres_ext', git: 'https://github.com/gocardless/postgres_ext', branch: 'rails-5'
 gem 'foreman', require: false
 gem 'puma'
@@ -50,7 +50,7 @@ gem 'semantic_range'
 gem 'license-compatibility'
 gem 'escape_utils'
 gem 'mail', require: ['mail', 'mail/utilities', 'mail/parsers']
-gem 'pictogram'
+gem 'pictogram', '>= 2.0.8'
 gem 'rails-timeago', git: 'https://github.com/librariesio/rails-timeago'
 gem 'rack-attack'
 gem 'rack-attack-rate-limit', require: 'rack/attack/rate-limit'
@@ -81,11 +81,11 @@ gem 'stripe'
 gem 'github-linguist'
 gem 'appsignal'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '>= 0.10.5'
 
 group :development do
   gem 'spring'
-  gem 'sql_queries_count'
+  gem 'sql_queries_count', '>= 0.0.1'
   gem 'brakeman', :require => false
   gem 'capistrano'
   gem 'capistrano-rails'
@@ -96,16 +96,16 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.2'
 end
 
 group :test do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.8.0'
   gem 'database_cleaner'
   gem 'rspec_junit_formatter'
   gem 'shoulda'
-  gem 'simplecov', require: false
-  gem 'codeclimate-test-reporter', require: false
+  gem 'simplecov', '>= 0.13.0', require: false
+  gem 'codeclimate-test-reporter', '>= 1.0.8', require: false
   gem 'faker'
   gem 'poltergeist'
   gem 'json_spec'
@@ -114,6 +114,6 @@ end
 
 group :production do
   gem 'bugsnag'
-  gem 'lograge'
+  gem 'lograge', '>= 0.9.0'
   gem 'rails_safe_tasks'
 end
