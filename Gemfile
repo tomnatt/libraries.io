@@ -104,8 +104,8 @@ group :test do
   gem 'database_cleaner'
   gem 'rspec_junit_formatter'
   gem 'shoulda'
-  gem 'simplecov', require: false
-  gem 'codeclimate-test-reporter', require: false
+  gem 'simplecov', '>= 0.13.0', require: false
+  gem 'codeclimate-test-reporter', '>= 1.0.8', require: false
   gem 'faker'
   gem 'poltergeist'
   gem 'json_spec'
