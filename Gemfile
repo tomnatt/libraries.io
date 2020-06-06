@@ -85,7 +85,7 @@ gem 'active_model_serializers'
 
 group :development do
   gem 'spring'
-  gem 'sql_queries_count'
+  gem 'sql_queries_count', '>= 0.0.1'
   gem 'brakeman', :require => false
   gem 'capistrano'
   gem 'capistrano-rails'
@@ -107,7 +107,7 @@ group :test do
   gem 'simplecov', require: false
   gem 'codeclimate-test-reporter', require: false
   gem 'faker'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.14.0'
   gem 'json_spec'
   gem 'rspec-sidekiq'
 end
