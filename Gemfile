@@ -4,7 +4,7 @@ ruby '2.4.0'
 gem 'dotenv-rails', :require => 'dotenv/rails-now'
 gem 'rb-readline'
 gem 'oj'
-gem 'rails', '5.0.2'
+gem 'rails', '6.0.3.5'
 gem 'pg'
 gem 'sassc-rails'
 gem 'uglifier'
@@ -85,7 +85,7 @@ gem 'active_model_serializers'
 
 group :development do
   gem 'spring'
-  gem 'sql_queries_count'
+  gem 'sql_queries_count', '>= 0.0.1'
   gem 'brakeman', :require => false
   gem 'capistrano'
   gem 'capistrano-rails'
