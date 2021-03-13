@@ -61,7 +61,7 @@ gem 'parallel', require: nil
 gem 'highscore'
 gem 'fast-stemmer'
 gem 'bloomfilter-rb'
-gem 'omniauth-gitlab'
+gem 'omniauth-gitlab', '>= 3.0.0'
 gem 'omniauth-bitbucket'
 gem 'chartkick'
 gem 'groupdate'
