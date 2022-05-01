@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 ruby '2.4.0'
 
-gem 'dotenv-rails', :require => 'dotenv/rails-now'
+gem 'dotenv-rails', '>= 2.2.2', :require => 'dotenv/rails-now'
 gem 'rb-readline'
 gem 'oj'
-gem 'rails', '5.0.2'
+gem 'rails', '5.2.7.1'
 gem 'pg'
 gem 'sassc-rails'
 gem 'uglifier'
@@ -30,10 +30,10 @@ gem 'fog-aws'
 gem 'omniauth-github'
 gem 'dalli'
 gem 'counter_culture'
-gem 'simple_form'
+gem 'simple_form', '>= 4.0.0'
 gem 'sidekiq'
 gem 'sidekiq-unique-jobs', git: 'https://github.com/mhenrixon/sidekiq-unique-jobs'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.4'
 gem 'mime-types', require: 'mime/types/columnar'
 gem 'fast_blank'
 gem 'fast_xs'
@@ -114,6 +114,6 @@ end
 
 group :production do
   gem 'bugsnag'
-  gem 'lograge'
+  gem 'lograge', '>= 0.9.0'
   gem 'rails_safe_tasks'
 end
