@@ -31,7 +31,7 @@ gem 'omniauth-github'
 gem 'dalli'
 gem 'counter_culture'
 gem 'simple_form'
-gem 'sidekiq'
+gem 'sidekiq', '>= 7.1.3'
 gem 'sidekiq-unique-jobs', git: 'https://github.com/mhenrixon/sidekiq-unique-jobs'
 gem 'font-awesome-rails'
 gem 'mime-types', require: 'mime/types/columnar'
@@ -109,7 +109,7 @@ group :test do
   gem 'faker'
   gem 'poltergeist'
   gem 'json_spec'
-  gem 'rspec-sidekiq'
+  gem 'rspec-sidekiq', '>= 3.0.0'
 end
 
 group :production do
